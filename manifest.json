@@ -1,0 +1,10 @@
+{
+  "name": "VisKeys",
+  "description": "An improved way to learn keyboard shortcuts: generative AI suggestions, virtual to physical mappings, and save favorites!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "tool_logo.png"
+  }
+}
