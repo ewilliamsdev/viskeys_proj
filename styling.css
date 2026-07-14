@@ -1,0 +1,1309 @@
+#base-layer {
+    /* Positioning */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 2/1;
+    justify-items: center;
+
+    display: flex;
+    box-sizing: border-box;
+
+    /* Layer sits on top of webpage content */
+    z-index: 999999;
+
+    /* Styling */
+    background-color: rgba(207, 220, 241);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(57, 65, 158, 0.80);
+}
+
+#close-ext-btn {
+    /* Positioning */
+    position: absolute;
+    top: -3.5%;
+    right: -2%;
+    border-radius: 50%;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Sizing */
+    width: 45px;
+    height: 45px;
+
+    /* Styling */
+    background-color: rgba(57, 65, 158, 0.28);
+    border-color: rgba(57, 65, 158, 0.80);
+    color: rgba(57, 65, 158, 0.80);
+}
+
+#close-ext-btn:hover {
+    background-color: rgba(57, 65, 158, 0.75);
+}
+
+#keyboard-comp {
+    top: 20%;
+    left: 10%;
+    width: 60%;
+    height: 60%;
+    min-width: 250px;
+    box-sizing: border-box;
+    /* height: 274px; */
+    /* aspect-ratio: 2/1; */
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: lightblue;
+}
+
+/* first row */
+
+.esc-key-elem {
+    top: 0;
+    left: 0;
+    /* min-width: 23px; */
+    width: 10%;
+    height: 10%;
+    /* width: 53px;
+    height: 30px; */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f1-key-elem {
+    top: 0;
+    left: 11.5%;
+    width: 6%;
+    height: 10%;
+    /* width: 33px;
+    height: 30px; */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f2-key-elem {
+    top: 0;
+    left: 19%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f3-key-elem {
+    top: 0;
+    left: 26.5%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f4-key-elem {
+    top: 0;
+    left: 34%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f5-key-elem {
+    top: 0;
+    left: 41.5%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f6-key-elem {
+    top: 0;
+    left: 49%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f7-key-elem {
+    top: 0;
+    left: 56.5%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f8-key-elem {
+    top: 0;
+    left: 64%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f9-key-elem {
+    top: 0;
+    left: 71.5%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f10-key-elem {
+    top: 0;
+    left: 79%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f11-key-elem {
+    top: 0;
+    left: 86.5%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f12-key-elem {
+    top: 0;
+    left: 94%;
+    width: 6%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* second row */
+
+.accent-key-elem {
+    top: 15%;
+    left: 0;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g1-key-elem {
+    top: 15%;
+    left: 7%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g2-key-elem {
+    top: 15%;
+    left: 14%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g3-key-elem {
+    top: 15%;
+    left: 21%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g4-key-elem {
+    top: 15%;
+    left: 28%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g5-key-elem {
+    top: 15%;
+    left: 35%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g6-key-elem {
+    top: 15%;
+    left: 42%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g7-key-elem {
+    top: 15%;
+    left: 49%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g8-key-elem {
+    top: 15%;
+    left: 56%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g9-key-elem {
+    top: 15%;
+    left: 63%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g0-key-elem {
+    top: 15%;
+    left: 70%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dash-key-elem {
+    top: 15%;
+    left: 77%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.plus-equal-key-elem {
+    top: 15%;
+    left: 84%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.back-key-elem {
+    top: 15%;
+    left: 91%;
+    width: 9%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* third row */
+
+.tab-key-elem {
+    top: 30%;
+    left: 0;
+    width: 9%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.q-key-elem {
+    top: 30%;
+    left: 10.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.w-key-elem {
+    top: 30%;
+    left: 17.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.e-key-elem {
+    top: 30%;
+    left: 24.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.r-key-elem {
+    top: 30%;
+    left: 31.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.t-key-elem {
+    top: 30%;
+    left: 38.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.y-key-elem {
+    top: 30%;
+    left: 45.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.u-key-elem {
+    top: 30%;
+    left: 52.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.i-key-elem {
+    top: 30%;
+    left: 59.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.o-key-elem {
+    top: 30%;
+    left: 66.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.p-key-elem {
+    top: 30%;
+    left: 73.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.leftB-key-elem {
+    top: 30%;
+    left: 80.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rightB-key-elem {
+    top: 30%;
+    left: 87.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.line-key-elem {
+    top: 30%;
+    left: 94.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* fourth row */
+
+.caps-key-elem {
+    top: 45%;
+    left: 0;
+    width: 10.75%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.a-key-elem {
+    top: 45%;
+    left: 12.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.s-key-elem {
+    top: 45%;
+    left: 19.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.d-key-elem {
+    top: 45%;
+    left: 26.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f-key-elem {
+    top: 45%;
+    left: 33.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.g-key-elem {
+    top: 45%;
+    left: 40.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h-key-elem {
+    top: 45%;
+    left: 47.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.j-key-elem {
+    top: 45%;
+    left: 54.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.k-key-elem {
+    top: 45%;
+    left: 61.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.l-key-elem {
+    top: 45%;
+    left: 68.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.colon-key-elem {
+    top: 45%;
+    left: 75.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.apostrophe-key-elem {
+    top: 45%;
+    left: 82.25%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-key-elem {
+    top: 45%;
+    left: 89.25%;
+    width: 10.75%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* fifth row */
+
+.shift1-key-elem {
+    top: 60%;
+    left: 0;
+    width: 14.25%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.z-key-elem {
+    top: 60%;
+    left: 15.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.x-key-elem {
+    top: 60%;
+    left: 22.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.c-key-elem {
+    top: 60%;
+    left: 29.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.v-key-elem {
+    top: 60%;
+    left: 36.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.b-key-elem {
+    top: 60%;
+    left: 43.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.n-key-elem {
+    top: 60%;
+    left: 50.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.m-key-elem {
+    top: 60%;
+    left: 57.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.leftCom-key-elem {
+    top: 60%;
+    left: 64.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rightPer-key-elem {
+    top: 60%;
+    left: 71.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quesLine-key-elem {
+    top: 60%;
+    left: 78.75%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shift2-key-elem {
+    top: 60%;
+    left: 85.75%;
+    width: 14.25%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* space row */
+
+.ctrl1-key-elem {
+    top: 75%;
+    left: 7%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.alt1-key-elem {
+    top: 75%;
+    left: 14%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.os1-key-elem {
+    top: 75%;
+    left: 21%;
+    width: 8%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.space-key-elem {
+    top: 75%;
+    left: 30.5%;
+    width: 33%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.os2-key-elem {
+    top: 75%;
+    left: 65%;
+    width: 8%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.alt2-key-elem {
+    top: 75%;
+    left: 74.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* arrows */
+
+.upArrow-key-elem {
+    top: 75%;
+    left: 87.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.leftArrow-key-elem {
+    top: 87.5%;
+    left: 81.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.downArrow-key-elem {
+    top: 87.5%;
+    left: 87.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rightArrow-key-elem {
+    top: 87.5%;
+    left: 93.5%;
+    width: 5.5%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 768px) {
+    #base-layer {
+        display: none !important;
+    }
+}
+

@@ -1,10 +1,30 @@
 {
+  "manifest_version": 3,
   "name": "VisKeys",
   "description": "An improved way to learn keyboard shortcuts: generative AI suggestions, virtual to physical mappings, and save favorites!",
   "version": "1.0",
-  "manifest_version": 3,
+  "icons": {
+    "16": "images/logo-16.png",
+    "32": "images/logo-32.png",
+    "48": "images/logo-48.png",
+    "128": "images/logo-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "tool_logo.png"
-  }
+    "default_icon": {
+      "16": "images/logo-16.png",
+      "32": "images/logo-32.png",
+      "48": "images/logo-48.png",
+      "128": "images/logo-128.png"
+    }
+  },
+  "permissions": ["activeTab", "scripting"],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/cancel-icon.png", "images/cancel-icon-hover.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
